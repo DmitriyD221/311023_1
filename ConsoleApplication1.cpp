@@ -9,16 +9,16 @@ public:
         return instance;
     }
     void Initialize() {
-        cout << "Äîäàòîê ³í³ö³àë³çóºòüñÿ." << endl;
+        cout << "Ð”Ð¾Ð´Ð°Ñ‚Ð¾Ðº Ñ–Ð½Ñ–Ñ†Ñ–Ð°Ð»Ñ–Ð·ÑƒÑ”Ñ‚ÑŒÑÑ." << endl;
     }
     void StartRandomize() {
-        cout << "Ðàíäîì³çàö³ÿ çàïêùåíà." << endl;
+        cout << "Ð Ð°Ð½Ð´Ð¾Ð¼Ñ–Ð·Ð°Ñ†Ñ–Ñ Ð·Ð°Ð¿ÐºÑ‰ÐµÐ½Ð°." << endl;
     }
     void SetTitle(const string& title) {
-        cout << "Çàãîëîâîê âñòàíîâëåíî íà: " << title << endl;
+        cout << "Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº Ð²ÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾ Ð½Ð°:" << title << endl;
     }
     void Exit() {
-        cout << "äîäàòîê çàâåðøåíî." << endl;
+        cout << "Ð´Ð¾Ð´Ð°Ñ‚Ð¾Ðº Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¾." << endl;
     }
 private:
     Application() {}
@@ -30,9 +30,9 @@ int main() {
     Application& app = Application::GetInstance();
     app.Initialize();
     app.StartRandomize();
-    app.SetTitle("Ìûé äîäàòîê");
-    string title = "Íîâèé çàãîëîâîê";
-    app.SetTitle(title + " Íåïðàâèëüíî!");
+    app.SetTitle("ÐœÑ‹Ð¹ Ð´Ð¾Ð´Ð°Ñ‚Ð¾Ðº");
+    string title = "ÐÐ¾Ð²Ð¸Ð¹ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº";
+    app.SetTitle(title + "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾!");
     app.Exit();
     return 0;
 }
